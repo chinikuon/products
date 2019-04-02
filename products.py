@@ -1,12 +1,15 @@
+import os #operating system
+
 products = []
 
-with open('products.csv', 'r', encoding='utf-8') as f:
-	for line in f:
-		if '商品,價格' in line:
-			continue
-		name, price =line.strip().split(',')#去\n,分割
-		products.append([name, price])
-print(products)
+if os.path.isfile('products.csv')
+	with open('products.csv', 'r', encoding='utf-8') as f:
+		for line in f:
+			if '商品,價格' in line:
+				continue
+			name, price =line.strip().split(',')#去\n,分割
+			products.append([name, price])
+	print(products)
 
 while True:
 	name = input('type product name: ')
