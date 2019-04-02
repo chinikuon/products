@@ -6,6 +6,8 @@ while True:
 		break
 	price = input('type price: ')
 	products.append([name, price])
-
-
 print(products)
+
+for p in products:
+	print(p[0], '的價格是：', p[1])
+
