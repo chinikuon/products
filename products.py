@@ -37,3 +37,5 @@ def main():
 	print_products(products)
 	write_file('products.csv', products)
 main()
+
+#refactor
